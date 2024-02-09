@@ -6,9 +6,14 @@ authors = ["ThetaSinner <ThetaSinner@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
 
+packages = [
+    { include = "holochain_client_user" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.8"
 locust = "^2.22.0"
+holochain-client = {path = "../holochain-client-python"}
 
 [build-system]
 requires = ["poetry-core"]
